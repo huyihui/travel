@@ -1,0 +1,243 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 微软雅黑;	
+	background-image: url(../images/bg.png);
+}
+header{
+	height: 100px;
+	width: 100%;
+	background-color: red;
+}
+.h_top{
+	height: 60%;
+	width: 100%;
+	background-color: white;
+}
+.h_top_left{
+	float: left;
+	margin-top: 10px;
+	margin-left:70px;
+}
+.h_top_right{
+	height: 100%;
+	float: right;
+	margin-right: 2%;
+	line-height: 56px;
+}
+.h_top_right a{
+	display:inline-block;
+	height: 100%;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.h_bottom{
+	height: 40%;
+	width: 100%;
+	background-color: #009eda;
+}
+.h_bottom ul{
+	width: 80%;
+	height: 40%;
+	margin-left: 80px;
+}
+.h_bottom a{
+	color: #FFF;
+	text-decoration: none;
+	display: inline-block;
+	height: 40%;
+	width:50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.h_bottom ul li a::before {
+		color: #000;
+		content: attr(data-hover);
+		position: absolute;
+		opacity: 0;
+		text-shadow: 0 0 1px rgba(255,255,255,0.3);
+		-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+		-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+		transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+		-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+		transition: transform 0.3s, opacity 0.3s;
+		pointer-events: none;
+	}
+.h_bottom ul li a:hover::before,
+.h_bottom ul li a:focus::before {
+		-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+		-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+		transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+		opacity: 1;
+	}
+
+.h_bottom li{
+	line-height: 40px;
+	margin-right: 50px;
+	display: inline-block;
+}
+.container{
+	/*background-color:black;*/
+	width: 1180px;
+	margin: 30px auto 0;
+}
+.detail_left{
+	height: 482px;
+	width: 580px;
+	background: #CCC;
+	float: left;
+}
+.detail_left img{
+	height: 482px;
+	width: 580px;
+}
+.detail_right{
+	height: 460px;
+	width: 535px;
+	background: #FFF;
+	float: left;
+	padding: 20px 20px 0 40px;
+	border-right: 5px solid #ccc;
+	border-top: 2px solid #ccc;
+	overflow: hidden;
+}
+.detail_right .name{
+	font-size: 30px;
+	font-weight: 500;
+}
+.price{
+	height: 100px;
+	background: #FFF9ED;
+	margin-top: 10px;
+}
+#price{
+	color: #f60;
+	font-size: 32px;
+	font-weight: normal;
+	padding:20px 2px 0 30px;
+	position: relative;
+	display: inline-block;
+}
+#price span{
+	color: gray;
+	font-size: 16px;
+}
+.detail_right dl{
+	margin-top:15px;
+	overflow: hidden;
+}
+.detail_right dt{
+	float: left;
+	margin-right:20px;
+	font-weight: bold;
+}
+.detail_right dd{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding: 0 4px;
+	color: #666;
+	border: 1px solid #dddddd;
+	margin-right: 4px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+	background: #f8f8f8;
+}
+.firm{
+	margin-top: 15px;
+	font-weight: bold;
+}
+.way{
+	font-weight: bold;
+	margin-top: 15px;
+}
+.way .fa{
+	font-size: 20px;
+	color: gray;
+}
+.way span{
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	margin-bottom: 4px;
+	padding: 0 4px;
+	font-weight: normal;
+}
+.text{
+	font-weight: bold;
+	margin-top: 15px;
+}
+.text h2{
+	font-size: 15.5px;
+}	
+.text p{
+	width: 380px;
+	font-weight: normal;
+	float: left;
+}
+.text span{
+	padding: 10px;
+	width: 80px;
+	background: #ccc;
+	border-radius: 7px;
+	border:1px solid #000;
+	display: block;
+	float: left;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+.comment{
+	height: 50px;
+	background: #70FAD4;
+	clear: both;
+	margin-top: 30px;
+	line-height: 50px;
+	padding-left: 40px;
+}
+.comdetail{
+	height: 213px;
+	background:rgba(255,255,255,1);
+	border: 3px solid #ccc;
+	overflow: hidden;
+}
+.comdetail span{
+	font-size: 16px;
+	font-weight: 700;	
+	display: inline-block;
+}
+.comdetail .userimg{
+	margin-left: 40px;
+	margin-top: 30px;
+	width: 130px;
+	height: 150px;
+	float: left;
+	background: #ccc;
+	color:#000;
+	text-align: center;
+}
+.comdetail .userimg img{
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+.comtxt{
+	margin-top: 30px;
+	width: 900px;
+	background: #FFF9ED;
+	height: 150px;
+	float:left;
+	margin-left: 50px;
+}
+.comtxt p{
+	margin:40px;
+	letter-spacing: 0.03em;
+	text-indent: 2em;
+}
+footer img{
+	display: block;
+	margin: 0 auto;
+}
