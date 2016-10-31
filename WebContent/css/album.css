@@ -1,0 +1,201 @@
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	z-index: 100;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 1000px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	text-align: right;
+	font-family: 微软雅黑;
+	letter-spacing: 0.2em;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.5; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+	height: 25px;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+	z-index: 99;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	left: 30px;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+/*
+Skin Name: Orman Theme
+Skin URI: http://nivo.dev7studios.com
+Skin Type: fixed
+Image Width: 568
+Image Height: 268
+Description: A light and green skin for the Nivo Slider.
+Version: 1.0
+Author: Gilbert Pellegrom & Orman Clark
+Author URI: http://dev7studios.com
+*/
+
+.theme-orman.slider-wrapper {
+    /*border: solid 1px #bbb;*/
+
+    height:402px;
+    position:relative;
+}
+
+.theme-orman .nivoSlider {
+    height:100%;
+}
+.theme-orman .nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+    width:600px; /* Make sure your images are the same size */
+    height:268px; /* Make sure your images are the same size */
+}
+.theme-orman .nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.theme-orman .nivo-controlNav {
+   	position:absolute;
+	left:46.5%;
+	bottom:-8px;
+    margin: 0 auto;
+}
+
+.controlNav_box {
+	background: url(../images/controlnav.png) no-repeat center;
+	width:251px;
+	height:40px;
+	margin: 0 auto;
+	margin-top:-17px;
+}
+.theme-orman .nivo-controlNav a {
+    display:block;
+    width:22px;
+    height:22px;
+    text-indent:-9999px;
+    border:0;
+    margin-right:7px;
+    float:left;
+}
+.theme-orman .nivo-controlNav a.active {
+      background-position:0 -22px;
+}
+
+
+.theme-orman .nivo-directionNav a {
+	display:block;
+	width:25px;
+	height:200px;
+	background:url(../images/arrows1.png) no-repeat 0% 80%;
+	text-indent:-9999px;
+	border:0;
+    top:40px;
+}
+.theme-orman a.nivo-nextNav {
+	background-position:100% 80%;
+	right:-4px;
+    	padding-right:20px;
+	margin-top:5px;
+}
+.theme-orman a.nivo-prevNav {
+	left:-3px;
+    	padding-left:20px;
+	margin-top:5px;
+}
+
+.theme-orman .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+    border-top: solid 1px #333;
+}
+.theme-orman .nivo-caption a { 
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-orman .nivo-caption a:hover { 
+    color:#fff;
+}
+
+.theme-orman .ribbon {
+    background:url(../images/ribbon.png) no-repeat;
+    width:111px;
+    height:111px;
+    position:absolute;
+    top:13px;
+    left:12px;
+    z-index:70;
+}
+
+.nivo-directionNav { display:block!important }
+
+.controlNav_box {
+	background: url(../images/controlnav.png) no-repeat center;
+	width:251px;
+	height:40px;
+	margin: 0 auto;
+	margin-top:-17px;
+}

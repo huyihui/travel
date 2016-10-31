@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.demo.model.Product" table="product">
+		<id name="proId" column="pro_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="proName" column="pro_name"></property>
+		<property name="proMoney" column="pro_money"></property>
+		<property name="proPic" column="pro_pic"></property>
+		<property name="proJieshao" column="pro_jieshao"></property>
+		<property name="proTese" column="pro_tese"></property>
+		<property name="proLuxian" column="pro_luxian"></property>
+		<property name="proChangshang" column="pro_changshang"></property>
+	</class>   
+</hibernate-mapping>

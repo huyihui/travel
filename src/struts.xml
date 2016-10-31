@@ -10,7 +10,8 @@
 			<result name="error">/error.jsp</result>
 		</global-results>
 		<action name="userAction" class="userAction">
-			<result name="success">/success.jsp</result>
+			<result name="success">/index.jsp</result>
+			<result name="xiangqing">/xiangqing.jsp</result>
 		</action>
 	</package>
 </struts>
